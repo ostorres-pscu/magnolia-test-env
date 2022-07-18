@@ -10,16 +10,13 @@
     "wouter": "^2.8.0-alpha.2"
   },
   "scripts": {
-    "start": "NODE_ENV=production && react-scripts start",
+    "start": "set NODE_ENV=production && react-scripts start",
     "test": "react-scripts test",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "build:mgnl": "npm run clean && env-cmd -f .env.mgnl react-scripts build",
     "deploy:mgnl": "npm run build:mgnl && copyfiles -u 1 \"build/**/*\" ../../magnolia/light-modules/react-minimal-lm/webresources/build",
     "clean": "rimraf build && rimraf ../../magnolia/light-modules/react-minimal-lm/webresources/build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -44,5 +41,8 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "rimraf": "^3.0.2"
+  },
+  "optionalDependencies": {
+    "win-node-env": "^0.6.1"
   }
 }

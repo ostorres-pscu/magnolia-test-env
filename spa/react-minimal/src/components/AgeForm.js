@@ -51,11 +51,13 @@ function AgeForm() {
   }
 
   return (
-    <form onSubmit={ saveAge }>
-      <div>
-        <label>Enter your age:</label>
-        <input ref={ input } onKeyUp={ handleInput }></input>
-        <button type="submit">Save</button>
+    <form className='' onSubmit={ saveAge }>
+      <div className='form-group'>
+        <label className='col-5 col-form-label'></label>
+        <div className='col-sm-12'>
+          <input className='form-control form-control-sm mb-2' ref={ input } onKeyUp={ handleInput } placeholder='Enter your age:'></input>
+          <button className="btn btn-primary btn-sm btn-block " type="submit">Save</button>
+        </div>
       </div>
       { displayError() }
       { getDisplayedText() }

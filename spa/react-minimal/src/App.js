@@ -32,9 +32,9 @@ function App() {
       </div>
 
       <footer>
-        Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+        Integer posuere erat a asdf asdf asdad ads asd f ante venenatis dapibus posuere velit aliquet.
         <br />
-        Copyright © 2020
+        Copyright © 2025
       </footer>
     </>
   );

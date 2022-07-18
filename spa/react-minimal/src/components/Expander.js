@@ -28,7 +28,7 @@ class Expander extends React.Component {
   render () {
     const expanderItems = this.props.expanderItems;
     return (
-      <div className="expander">
+      <div className="expander rounded">
         <div onClick={this.toggle} className={this.state.isCollapsed ? 'open expanderHeader' : 'closed expanderHeader'}>
           Expander
           <svg className="expanderIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
