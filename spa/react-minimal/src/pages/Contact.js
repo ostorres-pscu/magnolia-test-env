@@ -1,6 +1,7 @@
 import React from 'react';
 import { EditableArea } from '@magnolia/react-editor';
 import AgeForm from "../components/AgeForm";
+// import '../App.css';
 
 const Contact = props => {
   const { main, title } = props;

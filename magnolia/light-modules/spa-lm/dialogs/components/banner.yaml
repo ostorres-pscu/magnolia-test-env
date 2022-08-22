@@ -1,0 +1,9 @@
+label: Banner
+form:
+  properties:
+    image:
+      label: Select Banner Image
+      $type: linkField
+      chooser:
+        workbenchChooser:
+          appName: dam-chooser

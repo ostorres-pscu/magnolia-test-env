@@ -1,7 +1,7 @@
-title: 'Angular: Basic'
-baseUrl: http://localhost:4200
+title: 'React: Campaign'
+baseUrl: http://localhost:3000
 routeTemplate: '/{language}{{@path}}'
-# templateScript: /angular-minimal-lm/webresources/build/index.html
+# templateScript: /react-minimal-lm/webresources/build/index.html
 dialog: spa-lm:pages/basic
 
 renderType: spa
@@ -16,13 +16,14 @@ areas:
         id: spa-lm:components/headline
       Image:
         id: spa-lm:components/image
+      Banner:
+        id: spa-lm:components/banner
       Paragraph:
         id: spa-lm:components/paragraph
       Expander:
         id: spa-lm:components/expander
       List:
         id: spa-lm:components/list
-        
   extras:
     title: Extras Area
     availableComponents:
@@ -32,4 +33,8 @@ areas:
         id: spa-lm:components/paragraph
       List:
         id: spa-lm:components/list
-
+  last:
+    title: Last Area
+    availableComponents:
+      Disclosure:
+        id: spa-lm:components/disclosure

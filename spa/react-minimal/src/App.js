@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PageLoader from './helpers/PageLoader';
 import Navigation from './components/Navigation';
-import './App.css';
+
 import { events } from './helpers/AppHelpers';
 
 function App() {
@@ -23,18 +23,20 @@ function App() {
 
   return (
     <>
-      <header>
+      <header className='bg-light'>
         <Navigation />
       </header>
 
-      <div className='container'>
+      <div className='container-fluid'>
         <PageLoader pathname={pathname} />
       </div>
 
-      <footer>
-        Integer posuere erat a asdf asdf asdad ads asd f ante venenatis dapibus posuere velit aliquet.
-        <br />
-        Copyright © 2025
+      <footer className='container-fluid bg-light'>
+        <div className='container p-4 '>
+          Integer posuere erat a asdf asdf asdad ads asd f ante venenatis dapibus posuere velit aliquet.
+          <br />
+          Copyright © 2025
+        </div>
       </footer>
     </>
   );

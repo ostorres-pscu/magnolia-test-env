@@ -16,3 +16,12 @@ areas:
         id: spa-lm:components/paragraph
       Expander:
         id: spa-lm:components/expander
+  extras:
+    title: Extras Area
+    availableComponents:
+      Headline:
+        id: spa-lm:components/headline
+      Paragraph:
+        id: spa-lm:components/paragraph
+      List:
+        id: spa-lm:components/list

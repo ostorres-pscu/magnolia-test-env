@@ -1,0 +1,7 @@
+label: Disclosure
+form:
+  properties:
+    richText:
+      label: Disclosure Copy
+      $type: richTextField
+      i18n: true
